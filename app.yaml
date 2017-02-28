@@ -6,7 +6,7 @@ handlers:
   static_dir: images
 - url: /js
   static_dir: js
-  - url: /css
+- url: /css
   static_dir: css
 - url: /.*
   script: helloworld.php
