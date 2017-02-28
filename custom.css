@@ -1,0 +1,78 @@
+.parallax {
+    background: #e6e2d6;
+}
+#section-1 {
+    z-index: 1;
+    color: #fff;
+    height: 100vh;
+}
+#section-1 .row {
+    position: fixed;
+}
+#section-1 .parallax-layer-back {
+    background: url("cat-wallpaper.jpg")no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#section-2 {
+    z-index: 200;
+    position: relative;
+    background: #e6e2d6;
+    width: 100%;
+}
+
+.vcenter {
+    padding-top: 100px;
+    padding-left: 75px;
+}
+
+.col-big{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width:20%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+.dropdown ul {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown ul li{
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background: rgba(255,255,255,.5) !important;
+}
+
+.theme-choice {
+  background-color: #800f15;
+}
+
+.theme-choice.dog {
+  background-color: #bb936f;
+}
+
+.theme-choice.bird {
+  background-color: #ecc42f;
+}
+
+.theme-choice.snake {
+  background-color: #26950b;
+}
+
+.tab-content {
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+  padding: 1em 2em;
+  margin-bottom: 3em;
+}
