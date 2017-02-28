@@ -10,9 +10,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title><?php echo $name;?></title>
 
-        <link href="./assets/bootstrap.min.css" rel="stylesheet">
-        <link href="./assets/mdb.min.css" rel="stylesheet">
-        <link href="./assets/custom.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css" rel="stylesheet">
+        <link href="custom.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
 
@@ -108,23 +108,23 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./assets/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="./assets/scroll.js"></script>
-        <script type="text/javascript" src="./assets/tether.min.js"></script>
-        <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
-        <script type="text/javascript" src="./assets/mdb.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/scroll.js"></script>
+        <script type="text/javascript" src="./js/tether.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/js/mdb.min.js"></script>
 
         <script>
             new WOW().init();
 
             (function() {
                 var currentSelection = $('#section-1 .parallax-layer-back').css('background-image');
-                var src = "url('assets/images/cat-wallpaper.jpg')";
+                var src = "url('cat-wallpaper.jpg')";
 
                 $(".dropdown ul li").click(function() {
 
                     var name = $(this).attr('name');
-                    src = "url('assets/images/"+name+"-wallpaper.jpg')";
+                    src = "url('"+name+"-wallpaper.jpg')";
 
                     $('#tab-top').removeClass('cat dog bird snake');
                     $('#tab-top').addClass(name);
