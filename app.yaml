@@ -2,7 +2,7 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: /.*
-  script: helloworld.php
 - url: /js
   static_dir: js
+- url: /.*
+  script: helloworld.php
