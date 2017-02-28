@@ -118,12 +118,12 @@
 
             (function() {
                 var currentSelection = $('#section-1 .parallax-layer-back').css('background-image');
-                var src = "url('cat-wallpaper.jpg')";
+                var src = "url('images/cat-wallpaper.jpg')";
 
                 $(".dropdown ul li").click(function() {
 
                     var name = $(this).attr('name');
-                    src = "url('"+name+"-wallpaper.jpg')";
+                    src = "url('images/"+name+"-wallpaper.jpg')";
 
                     $('#tab-top').removeClass('cat dog bird snake');
                     $('#tab-top').addClass(name);
