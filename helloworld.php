@@ -209,6 +209,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <center>
+                                <a href="https://goo.gl/forms/F1vgMDlDkvEAlHEg2" alt="Take the quiz!" target="_blank">
+                                    <button id="google-forms-btn" type="button" class="btn btn-default theme-choice btn-lg">Take the Quiz</button>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,8 +240,10 @@
                     src = "url('images/"+name+"-wallpaper.jpg')";
 
                     $('#tab-top').removeClass('cat dog bird snake');
+                    $('#google-forms-btn').removeClass('cat dog bird snake');
                     $('.styled').removeClass('cat dog bird snake');
                     $('#tab-top').addClass(name);
+                    $('#google-forms-btn').addClass(name);
                     $('.styled').addClass(name);
 
                     $('#section-1 .parallax-layer-back').fadeTo('slow', 0.3, function() {
