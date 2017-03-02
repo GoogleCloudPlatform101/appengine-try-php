@@ -61,49 +61,154 @@
 
             <div id="section-2" name="section-2">
                 <div class="container text-center pt-1 mb-3">
-
-                <!-- Nav tabs -->
-                <ul id="tab-top" class="nav nav-tabs tabs-4 theme-choice" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fa fa-cloud"></i> Tab One</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fa fa-heart"></i> Tab Two</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab"><i class="fa fa-cogs"></i> Tab Three</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#panel4" role="tab"><i class="fa fa-magic"></i> Tab Four</a>
-                    </li>
-                </ul>
-                <!-- Tab panels -->
-                <div class="tab-content">
-                    <!--Panel 1-->
-                    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                    <ul id="tab-top" class="nav nav-tabs tabs-4 theme-choice" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">GAE Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Runtime Environments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Storage &amp; Memcache</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Stipulations &amp; Use</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <ul class="styled">
+                                            <li>GAE is one component of the Google Cloud Platform that is PaaS, where the individual/team just manages the application, allowing Google to handle the rest</li>
+                                            <li>GAE’s goals is designed to:
+                                                <ul class="styled">
+                                                    <li>Make the system easy to use</li>
+                                                    <li>Make it easy to scale</li>
+                                                    <li>And free to get started (with a $300 bonus to use once you start acquiring fees)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <ul class="styled">
+                                            <li>GAE provides an App Engine SDK that supports programmer development, and an infrastructure to run web apps. This means they are specifically focused on web applications while providing tools to make it easily run, deploy, and scale</li>
+                                            <li>GAE provides a way for you to pack up your code, specify how you want it to run in response to requests, and then they run and serve it for you</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="panel2" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <h2>Standard</h2>
+                                        <ul class="styled">
+                                            <li>Python 2.7</li>
+                                            <li>Java 6</li>
+                                            <li>PHP 5</li>
+                                            <li>GO</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <h2>Flexible</h2>
+                                        <ul class="styled">
+                                            <li>Python 2.7/3.5</li>
+                                            <li>Java 8</li>
+                                            <li>PHP 5/7</li>
+                                            <li>GO</li>
+                                            <li>Node.js</li>
+                                            <li>Ruby</li>
+                                            <li>Some Custom Runtime</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="panel3" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <h2>Storage</h2>
+                                        <ul class="styled">
+                                            <li>Static</li>
+                                            <li>Dynamic
+                                                <ul class="styled">
+                                                    <li> Datastore is dynamic
+                                                        <ul class="styled">
+                                                            <li>NoSQL database that with query engine</li>
+                                                            <li>Encrypts all data before written to disk and decrypts the data for authorized user</li>
+                                                            <li>Robust, scalable storage</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <h2>Memcache</h2>
+                                        <ul class="styled">
+                                            <li>Shared
+                                                <ul class="styled">
+                                                    <li>Free with GAE, provides cache capacity on a best-effort basis</li>
+                                                </ul>
+                                            </li>
+                                            <li>Dedicated
+                                                <ul class="styled">
+                                                    <li>Paid service where you get to choose how much cache is dedicated to your application. More cache helps alleviate the higher cost of more storage (by reducing reads from higher accuracy request predictions)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="panel4" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <ul class="styled">
+                                            <li>Interaction of GAE and website must follow HTTP interaction</li>
+                                            <li>Some websites do not like ‘robot’ to access</li>
+                                            <li>If Datastore becomes too small
+                                                <ul class="styled">
+                                                    <li>Use BigTable</li>
+                                                    <li>BigTable is beneficial (financially practical) with database > 1 TB</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <p>
+                                        <ul class="styled">
+                                            <li>When not to use GAE
+                                                <ul class="styled">
+                                                    <li>You have a "naked" website that doesn't follow HTTP protocol</li>
+                                                    <li>Your requests take longer than 30 seconds to pull</li>
+                                                    <li>Not suitable for high computation jobs. Use Google Compute Engine or another GCP service</li>
+                                                    <li>Your web application is written in a legacy language or one other than those supported and you can't "skin" it, or rewrite it. Look to AWS</li>
+                                                    <li>You want more control</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!--/.Panel 1-->
-                    <!--Panel 2-->
-                    <div class="tab-pane fade" id="panel2" role="tabpanel">
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-                    </div>
-                    <!--/.Panel 2-->
-                    <!--Panel 3-->
-                    <div class="tab-pane fade" id="panel3" role="tabpanel">
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-                    </div>
-                    <div class="tab-pane fade" id="panel4" role="tabpanel">
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-                    </div>
-                    <!--/.Panel 3-->
-                </div>
-
                 </div>
             </div>
         </div>
@@ -126,7 +231,9 @@
                     src = "url('images/"+name+"-wallpaper.jpg')";
 
                     $('#tab-top').removeClass('cat dog bird snake');
+                    $('.styled').removeClass('cat dog bird snake');
                     $('#tab-top').addClass(name);
+                    $('.styled').addClass(name);
 
                     $('#section-1 .parallax-layer-back').fadeTo('slow', 0.3, function() {
                         $('#section-1 .parallax-layer-back').css("background-image", src);
